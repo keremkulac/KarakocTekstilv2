@@ -1,7 +1,8 @@
-package com.keremkulac.karakoctekstilv2
+package com.keremkulac.karakoctekstilv2.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.keremkulac.karakoctekstilv2.R
 import dagger.hilt.android.AndroidEntryPoint
 
 

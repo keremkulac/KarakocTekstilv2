@@ -1,12 +1,12 @@
-package com.keremkulac.karakoctekstilv2.ui
+package com.keremkulac.karakoctekstilv2.ui.calculate
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.keremkulac.karakoctekstilv2.Resource
-import com.keremkulac.karakoctekstilv2.repository.ExchangeRateRepositoryImp
-import com.keremkulac.karakoctekstilv2.repository.model.ExchangeRate
+import com.keremkulac.karakoctekstilv2.data.repository.repo.exchangeRate.ExchangeRateRepositoryImp
+import com.keremkulac.karakoctekstilv2.model.exchangeRate.ExchangeRate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

@@ -7,7 +7,16 @@
 
     <fragment
         android:id="@+id/calculateFragment"
-        android:name="com.keremkulac.karakoctekstilv2.ui.CalculateFragment"
+        android:name="com.keremkulac.karakoctekstilv2.ui.calculate.CalculateFragment"
         android:label="fragment_calculate"
-        tools:layout="@layout/fragment_calculate" />
+        tools:layout="@layout/fragment_calculate" >
+        <action
+            android:id="@+id/action_calculateFragment_to_unitPricesFragment"
+            app:destination="@id/unitPricesFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/unitPricesFragment"
+        android:name="com.keremkulac.karakoctekstilv2.ui.unitPrices.UnitPricesFragment"
+        android:label="fragment_unit_prices"
+        tools:layout="@layout/fragment_unit_prices" />
 </navigation>

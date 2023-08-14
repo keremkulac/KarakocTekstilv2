@@ -1,4 +1,4 @@
-package com.keremkulac.karakoctekstilv2.repository.model
+package com.keremkulac.karakoctekstilv2.model.exchangeRate
 
 import com.google.gson.annotations.SerializedName
 

@@ -1,11 +1,18 @@
-package com.keremkulac.karakoctekstilv2.repository
+package com.keremkulac.karakoctekstilv2.data.repository.repo.exchangeRate
 
-import com.keremkulac.karakoctekstilv2.repository.model.ExchangeRate
+import com.keremkulac.karakoctekstilv2.model.exchangeRate.ExchangeRate
 import com.keremkulac.karakoctekstilv2.Resource
+import com.keremkulac.karakoctekstilv2.data.remote.ExchangeRateService
 import javax.inject.Inject
 
-class ExchangeRateRepositoryImp @Inject constructor(private val api : ExchangeRateRepository):
-    ExchangeRateRepositoryInterface {
+interface ExchangeRateRepository {
+    suspend fun getExchangeRateDollar() : Resource<ExchangeRate>
+    suspend fun getExchangeRateEuro() : Resource<ExchangeRate>
+
+}
+
+class ExchangeRateRepositoryImp @Inject constructor(private val api : ExchangeRateService):
+    ExchangeRateRepository {
 
     override suspend fun getExchangeRateDollar(): Resource<ExchangeRate> {
         return try {
@@ -37,3 +44,4 @@ class ExchangeRateRepositoryImp @Inject constructor(private val api : ExchangeRa
 
 
 }
+
