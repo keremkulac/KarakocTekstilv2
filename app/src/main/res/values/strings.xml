@@ -6,4 +6,6 @@
     <string name="cloth_meter_price">Bez metre fiyatı($)</string>
     <string name="yarn_weight_price">İp kilo fiyatı($)</string>
     <string name="save">Kaydet</string>
+    <string name="exchange_rate_dollar">Dolar kuru</string>
+    <string name="exchange_rate_euro">Euro kuru</string>
 </resources>

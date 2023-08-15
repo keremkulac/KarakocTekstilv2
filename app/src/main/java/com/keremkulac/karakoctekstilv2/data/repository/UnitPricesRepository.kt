@@ -11,4 +11,6 @@ class UnitPricesRepository @Inject constructor(
 
     suspend fun getUnitPrices ( ) = unitPricesDAO.getAllUnitPrices()
 
+    suspend fun updateUnitPrices (unitPrices: UnitPrices) = unitPricesDAO.updateUnitPrices(unitPrices.yarnWeightPrice,unitPrices.clothMeterPrice,unitPrices.updated,1)
+
 }

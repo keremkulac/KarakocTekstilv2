@@ -12,4 +12,6 @@ data class UnitPrices(
     var yarnWeightPrice: String,
     @ColumnInfo(name = "clothMeterPrice")
     var clothMeterPrice: String,
+    @ColumnInfo(name = "updated")
+    var updated: Boolean,
 )

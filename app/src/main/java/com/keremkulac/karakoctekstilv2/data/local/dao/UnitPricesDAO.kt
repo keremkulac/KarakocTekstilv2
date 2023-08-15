@@ -13,4 +13,8 @@ interface UnitPricesDAO {
 
     @Query("SELECT * FROM unitPrices")
     suspend fun getAllUnitPrices() : UnitPrices
+
+    @Query("UPDATE unitPrices SET yarnWeightPrice = :yarnWeightPrice, clothMeterPrice = :clothMeterPrice , updated = :updated WHERE id = :id")
+    suspend fun updateUnitPrices(yarnWeightPrice : String,clothMeterPrice : String,updated : Boolean, id : Int)
+
 }
